@@ -1,4 +1,4 @@
-# purge-cache
+# purge-cache-sing id
 
 This action allows the cache of GitHub Actions to be automatically purged
 

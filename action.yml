@@ -1,5 +1,5 @@
-name: "Purge cache"
-description: Purge GitHub Actions cache
+name: "Purge cache by id"
+description: Purge GitHub Actions cache using their id
 inputs:
   debug:
     description: 'Out debug info'
