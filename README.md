@@ -1,4 +1,4 @@
-# purge-cache-using id
+# purge-cache-by-id
 
 This action allows the cache of GitHub Actions to be automatically purged
 
@@ -8,7 +8,7 @@ See [action.yml](action.yml)
 ```yaml
 steps:
 # Do other steps like checkout, install, compile, etc.
-- uses: MyAlbum/purge-cache
+- uses: not-dhanraj/purge-cache-by-id
   with:
     max-age: 604800 # Cache max 7 days since last use (this is the default)
 ```
@@ -26,7 +26,7 @@ Output debug data (defaults to `false`)
 ```yaml
 steps:
 # Do other steps like checkout, install, compile, etc.
-- uses: MyAlbum/purge-cache
+- uses: not-dhanraj/purge-cache-by-id
   with:
     debug: true # Set to true to output debug info
 ```
@@ -38,7 +38,7 @@ Set a GitHub token, will default to `${github.token}`. This will probably not be
 ```yaml
 steps:
 # Do other steps like checkout, install, compile, etc.
-- uses: MyAlbum/purge-cache
+- uses: not-dhanraj/purge-cache-by-id
   with:
     token: $GITHUBTOKEN # Set a GitHub token
 ```
